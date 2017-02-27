@@ -28,15 +28,6 @@ public class JSONWeatherParser {
             place.setLat(Utils.getFloat("lat", coordObj));
             place.setLon(Utils.getFloat("lon", coordObj));
 
-            // place
-            JSONObject sysObj = Utils.getObject("sys", jsonObject);
-            place.setCountry(Utils.getString("country", sysObj));
-            place.setLastupdate(Utils.getInt("dt", jsonObject));
-            place.setSunrise(Utils.getInt("sunrise", sysObj));
-            place.setSunset(Utils.getInt("sunset", sysObj));
-            place.setCity(Utils.getString("name", jsonObject));
-            weather.place = place;
-
             // weather
             JSONArray jsonArray = jsonObject.getJSONArray("weather");
             JSONObject jsonWeather = jsonArray.getJSONObject(0);
@@ -53,6 +44,15 @@ public class JSONWeatherParser {
             // clouds
             JSONObject cloudObj = Utils.getObject("clouds", jsonObject);
             weather.clouds.setPrecipitation(Utils.getInt("all", cloudObj));
+
+            // place
+            JSONObject sysObj = Utils.getObject("sys", jsonObject);
+            place.setCountry(Utils.getString("country", sysObj));
+            // place.setLastupdate(Utils.getInt("dt", jsonObject));    TODO
+            place.setSunrise(Utils.getInt("sunrise", sysObj));
+            place.setSunset(Utils.getInt("sunset", sysObj));
+            // place.setCity(Utils.getString("name", jsonObject));  TODO
+            weather.place = place;
 
             return weather;
 

@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
             weather = JSONWeatherParser.getWeather(data);
 
-            Log.v("Data", weather.place.getCity());
+            Log.v("Data", weather.place.getCountry());
 
             return weather;
         }

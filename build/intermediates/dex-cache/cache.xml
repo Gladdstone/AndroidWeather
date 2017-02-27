@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e888e076b30dd3543284fc0941ab240a8827e847">
+        sha1="429513e81e613f4faffd4eedd201a81b2e5c39b5">
         <dex dex="D:\Users\Gladdstone\Documents\GitHub\weatherapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d58e10255f672ce21abfa852cecbba425db8dc4f\classes.dex" />
     </item>
     <item
@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="30d2cd3caa21f7972556de712fa94794ac8d579e">
+        sha1="1e3c6b5d62724ad5e77b16e6a88c06febddfc47c">
         <dex dex="D:\Users\Gladdstone\Documents\GitHub\weatherapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_97274353f2a3c7730781c62c0f771817b112a4c4\classes.dex" />
     </item>
     <item
