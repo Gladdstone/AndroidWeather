@@ -6,8 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#4286f4"
+    android:background="@drawable/clouds"
     tools:context="comgladdstone.httpsgithub.weather.MainActivity">
+
 
     <TextView
         android:id="@+id/txtCity"
